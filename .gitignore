@@ -8,4 +8,7 @@ venv/
 runs/
 artifacts/
 *.log
-
+!research/runs/
+!research/runs/**
+!research/artifacts/
+!research/artifacts/**

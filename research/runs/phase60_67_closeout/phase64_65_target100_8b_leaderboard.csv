@@ -1,0 +1,14 @@
+method,feedback_budget,judge_flip_prob,runs,success_mean,success_sd,feedback_mean,train_mean,test_mean
+adaptive_fwb,1,0.000,2,0.5300,0.0000,1.0000,2.0150,3.0150
+adaptive_fwb,2,0.000,2,0.5750,0.0050,1.3600,1.7750,3.1350
+adaptive_fwb,4,0.000,2,0.4400,0.0200,1.9100,3.7650,5.6750
+fixed_k_judge_k2,4,0.000,2,0.4300,0.1000,2.7300,2.3550,3.9100
+inference_only,1,0.000,2,0.4050,0.0150,1.0000,0.0000,1.0000
+resample_only,1,0.000,2,0.4100,0.0100,1.0000,0.0000,1.0000
+resample_only,2,0.000,2,0.4600,0.0100,1.5850,0.0000,1.5850
+resample_only,4,0.000,2,0.5250,0.0050,2.5450,0.0000,2.5450
+frontier_auc:
+  adaptive_fwb: 1.5675
+  fixed_k_judge_k2: 0.0000
+  inference_only: 0.0000
+  resample_only: 1.4200

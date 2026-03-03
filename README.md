@@ -79,3 +79,14 @@ Expected report path:
 - `examples/verifiers_integration.md` (with Verifiers)
 - `examples/ttrl_tinker.md` (with Tinker)
 - `THREAD.md` (ready Twitter thread draft)
+
+## Included research code + artifacts
+
+This repo also includes the training/eval stack used in the experiments:
+
+- `research/ttRL/` — core training loop and policy integration
+- `research/scripts/` — experiment launch, ablation, leaderboard, plotting scripts
+- `research/tests/` — regression tests for key behavior
+- `research/data/` — minimal runnable specs/tasks for smoke runs
+- `research/artifacts/phase60_67_paper_figures/` — key figures used in writeups
+- `research/runs/phase60_67_closeout/` — compact closeout tables/cards

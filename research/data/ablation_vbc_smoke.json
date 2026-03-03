@@ -1,0 +1,36 @@
+{
+  "name": "ablation_vbc_smoke",
+  "run_group": "verify_vbc_smoke",
+  "ablation_tag": "vbc_smoke",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "tasks_path": "data/tasks_min.jsonl",
+  "judge_mode": "oracle_binary",
+  "method": "adaptive_fwb",
+  "feedback_budget": 2,
+  "inner_updates": 2,
+  "adaptive_budget_scheduler": true,
+  "adaptive_budget_base": 1,
+  "adaptive_budget_hard": 2,
+  "adaptive_budget_chain": 2,
+  "adaptive_budget_op_chain_threshold": 0.5,
+  "teacher_resample_attempts": 1,
+  "max_steps": 2,
+  "max_tokens": 192,
+  "temperature": 0.6,
+  "top_p": 0.9,
+  "run_timeout_s": 1800,
+  "run_retries": 1,
+  "runs": [
+    {
+      "run_name": "adaptive-legacy-b2-s0-vbcsmoke",
+      "seed": 0,
+      "verifier_budget_policy": "legacy"
+    },
+    {
+      "run_name": "adaptive-vbc-v1-b2-s0-vbcsmoke",
+      "seed": 0,
+      "verifier_budget_policy": "vbc_v1"
+    }
+  ]
+}
+

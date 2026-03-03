@@ -1,0 +1,5 @@
+method,feedback_budget,judge_flip_prob,runs,success_mean,success_sd,feedback_mean,train_mean,test_mean
+adaptive_fwb,2,0.000,9,0.5511,0.0526,1.3444,2.0822,4.6889
+adaptive_fwb,4,0.000,9,0.5089,0.0817,1.8867,3.9711,7.2267
+frontier_auc:
+  adaptive_fwb: 1.0600
